@@ -39,7 +39,7 @@ int isFactor(long long primaryNumber, long long secondaryNumber) {
 	return 0;
 }
 
-/*
+/**
 * Checks if number is a prime number.
 * Note: When looking at the tasks I chose to set my parameters as long long s so that we can compute larger numbers (-2^63+1 to 2^63-1).
 * @param number: The number to be checked.
@@ -77,7 +77,7 @@ int isPrimeFactor(long long primaryNumber, long long secondaryNumber) {
 	return 0;
 }
 
-/*
+/**
 * Calculates and returns the faculty of number.
 * Note: I chose short int for my parameter and long long for my returned data since the faculty of a number gets huge very quickly.
 * @param number: The number which faculty should be calculated.

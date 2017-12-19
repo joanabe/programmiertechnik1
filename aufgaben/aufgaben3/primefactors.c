@@ -37,7 +37,7 @@ int isFactor(long long primaryNumber, long long secondaryNumber) {
 	return 0;
 }
 
-/*
+/**
 * Checks if number is a prime number.
 * Note: By looking at the next tasks I chose to set my parameters as long long s so that we can compute larger numbers (-2^63+1 to 2^63-1).
 * @param number: The number to be checked.
@@ -105,10 +105,19 @@ int main(int argc, char const *argv[]) {
 		return 0;
 	}
 
-	//Start counting from 1 to userNumber and print out every i that's a valid prime factor of userNumber
-	for (long long i = 1; i <= userNumber; i++) {
+	//Start counting from 2 to userNumber and print out every i that's a valid prime factor of userNumber
+	if (isPrimeFactor(userNumber, 2) == 1) {
+			printf("%d\n", 2);
+			while ( userNumber % 2 == 0) {	
+				userNumber /= 2;
+			}
+	}
+	for (long long i = 3; i <= userNumber; i+=2) {
 		if (isPrimeFactor(userNumber, i) == 1) {
 			printf("%lli\n", i);
+			while ( userNumber % i == 0) {	
+				userNumber /= i;
+			}
 		}
 	}
 	return 0;
