@@ -1,9 +1,0 @@
-Zeigen Sie mithilfe der C-Sprachdefinition (S. 409ff) dass die gegeben Beispiele gültige expression sind. Geben Sie dafür die Ableitung an. Welche Werte ergeben diese Ausdrücke?
-
-    1) (int) 3.141
-    2) e = 2.0 + .718
-    3) a = 0
-    4) a += e
-
-
-
