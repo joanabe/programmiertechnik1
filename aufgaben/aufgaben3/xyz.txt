@@ -1,0 +1,34 @@
+Es sei gegeben
+
+    X ::= (a b a) *
+    Y ::= c | a Y b | b Y a
+    Z ::= [X] [Y]
+
+Wobei X, Y, Z Terminalsymbole und a, b, c Nicht-Terminalsymbole.
+
+Mögliche Kombinationen:
+
+1) Sei X Start
+
+i) (leeres Wort)
+ii) aba
+iii) abaaba
+iv) abaabaaba
+v) abaabaabaaba
+
+2) Sei Y Start
+
+i) c
+ii) acb
+iii) bca
+iv) aacbb
+v) bbcaa
+
+3) Sei Z Start
+
+i) abac
+ii) abaacb
+iii) ababca
+iv) abaaacbb
+v) ababbcaa
+
